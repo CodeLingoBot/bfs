@@ -23,7 +23,7 @@ type Auth struct {
 	c *conf.Config
 }
 
-// NewAuth
+// New: New
 func New(c *conf.Config) (a *Auth, err error) {
 	a = &Auth{}
 	a.c = c

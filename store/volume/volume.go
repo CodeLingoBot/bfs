@@ -432,7 +432,7 @@ func (v *Volume) compact(nv *Volume) (err error) {
 	return
 }
 
-// Compact copy the super block to another space, and drop the "delete"
+// StartCompact: Compact copy the super block to another space, and drop the "delete"
 // needle, so this can reduce disk space cost.
 func (v *Volume) StartCompact(nv *Volume) (err error) {
 	v.lock.Lock()

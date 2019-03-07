@@ -120,7 +120,7 @@ func (z *Zookeeper) Store(rack, store string) (data []byte, err error) {
 	return
 }
 
-// SetVolumeStat set volume stat
+// SetVolumeState: set volume stat
 func (z *Zookeeper) SetVolumeState(volume *meta.Volume) (err error) {
 	var (
 		d      []byte

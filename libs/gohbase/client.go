@@ -724,7 +724,7 @@ func (c *client) DisableTable(t *hrpc.DisableTable) (*hrpc.Result, error) {
 	return &hrpc.Result{}, nil
 }
 
-// Could be removed in favour of above
+// SendRPC: Could be removed in favour of above
 func (c *client) SendRPC(rpc hrpc.Call) (*hrpc.Result, error) {
 	pbmsg, err := c.sendRPC(rpc)
 
